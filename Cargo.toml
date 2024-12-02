@@ -4,3 +4,10 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
+rand = "0.8.5"
+vulkano = "0.34.0"
+vulkano-shaders = "0.34.0"
+
+# Optimization for reducing performance artifacts.
+[profile.dev]
+opt-level = 1
